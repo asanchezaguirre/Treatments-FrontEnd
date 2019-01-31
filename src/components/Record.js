@@ -6,7 +6,7 @@ class Record extends Component{
 	}
 	render(){
 		return(
-				<div></div>
+				<div>Records</div>
 			)
 	}
 }
