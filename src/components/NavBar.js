@@ -10,8 +10,9 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText'
-import Divider from '@material-ui/core/Divider'
+import ListItemText from '@material-ui/core/ListItemText';
+import Divider from '@material-ui/core/Divider';
+import {Link} from 'react-router-dom';
 
 const styles = {
   root: {
@@ -60,8 +61,9 @@ class ButtonAppBar extends React.Component{
 	          <Typography style={ AppBarStyles }variant="h6" color="inherit" className={ this.props.grow }>
 	            Muktek
 	          </Typography>
-	          <Button color="inherit">HOME</Button>
-	          <Button color="inherit">LOGIN</Button>
+
+	          <Link to='/'><Button color="inherit">HOME</Button></Link>
+	          <Link to='/login'><Button color="inherit">LOGIN</Button></Link>
 	        </Toolbar>
 	        <Drawer open={this.state.open} onClose={this.toggleDrawer}>
 	          <div
@@ -75,11 +77,11 @@ class ButtonAppBar extends React.Component{
 	            		<ListItemText style={ ListItemTextStyle } primary="Features"/>
 	            	</ListItem>
 	            	<ListItem button>
-	            		Users
+	            		<Link to='/users'>Users</Link>
 	            	</ListItem>
 	            	<Divider />
 	            	<ListItem button>
-	            		Treatments
+	            		<Link to='/users'>Treatments</Link>
 	            	</ListItem>
 	            </List>
 	          </div>
