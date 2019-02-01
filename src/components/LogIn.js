@@ -23,12 +23,11 @@ class LogIn extends Component {
 		})
 	}
 
-	onChangeInput = event =>{
-		const { id, value} = event.target
-		this.setState ({
-			[id]: value
-		})
-	}
+	onChangeInput = e => {
+   		this.setState({
+     		[e.target.name]: e.target.value
+   		})
+ 	}
 
 	onSubmitHandle = event =>{
 		event.preventDefault()
@@ -94,14 +93,14 @@ class LogIn extends Component {
 						<form onSubmit={ this.onSubmitHandle }>
 				           <TextField
 				             required
-				             id="name"
+				             name="name"
 				             label="Name"
 				             fullWidth
 				             onChange={ this.onChangeInput }
 				           />
 				           <TextField
 				             required
-				             id="email"
+				             name="email"
 				             type="email"
 				             label="email"
 				             fullWidth

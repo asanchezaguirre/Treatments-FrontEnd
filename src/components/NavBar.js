@@ -81,7 +81,7 @@ class ButtonAppBar extends React.Component{
 	            	</ListItem>
 	            	<Divider />
 	            	<ListItem button>
-	            		<Link to='/users'>Treatments</Link>
+	            		<Link to='/treatments'>Treatments</Link>
 	            	</ListItem>
 	            </List>
 	          </div>
