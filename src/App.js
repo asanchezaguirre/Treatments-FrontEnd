@@ -5,7 +5,7 @@ import Home from './components/Home';
 import LogIn from './components/LogIn';
 import Users from './components/Users';
 import Treatments from './components/Treatments';
-import Record from './components/Record';
+
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -22,7 +22,7 @@ class App extends Component {
        	<Route exact path='/login' component ={LogIn}/>
        	<Route exact path='/users' component ={Users}/>
        	<Route exact path='/treatments' component ={Treatments}/>
-       	<Route exact path='/record' component ={Record}/>
+      
        </Switch>
       </div>
     );
